@@ -1,6 +1,6 @@
-3f72d6e438d84e6c073a75779529eca8 *DESCRIPTION
+64d7518cc504ea95f4f87b2d33c6f91b *DESCRIPTION
 f9e3394cb355978eba2611e868ef6bae *NAMESPACE
-5cf4e97b6ce6e9e04403b434de5a6419 *NEWS.md
+fdd06ea0563513985034daa08093567d *NEWS.md
 5c8adb2c439c423473abb316a63dfd03 *R/FullyParametricCopulas.R
 4dd1edb1034d54d14949183b017e2a6f *R/NonparametricTransformation.R
 06c4834b6c0e6e62861df78fd240de0a *R/ParamTransfoCompRisks.R
@@ -36,6 +36,7 @@ b905b8f9f28a9252320346c3ee1485a7 *man/dchol2par.Rd
 920b2bd1ac892a1d97244d24a3b27d05 *man/dchol2par.elem.Rd
 a47a995260c7ad4628f81fb184109123 *man/estimate.cf.Rd
 ce8e89b43d276020c9a8ee937713619f *man/estimate.cmprsk.Rd
+b4e61a9c82ae5bd608e15debc71863b3 *man/figures/manual.pdf
 dabd740a6f890ba759f1b6fb6897d330 *man/likF.cmprsk.Cholesky.Rd
 4b472fe928a06aeca13b608d3e3a73d5 *man/likIFG.cmprsk.Cholesky.Rd
 ebdac9c4b46d7fe2cfb91e1921c29de2 *man/log_transform.Rd
