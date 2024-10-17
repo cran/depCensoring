@@ -1,7 +1,7 @@
-64d7518cc504ea95f4f87b2d33c6f91b *DESCRIPTION
+2c3b73ad99785729ddedaf54c3555aa3 *DESCRIPTION
 f9e3394cb355978eba2611e868ef6bae *NAMESPACE
-fdd06ea0563513985034daa08093567d *NEWS.md
-5c8adb2c439c423473abb316a63dfd03 *R/FullyParametricCopulas.R
+158d93e8c4ed45b9cf733b96fd9fa787 *NEWS.md
+da06e209227a5d670f65f1aa4da4bd68 *R/FullyParametricCopulas.R
 4dd1edb1034d54d14949183b017e2a6f *R/NonparametricTransformation.R
 06c4834b6c0e6e62861df78fd240de0a *R/ParamTransfoCompRisks.R
 7c1bb70dc9da9999006a1259d4ad32b1 *R/dataGeneratingFunction.R
@@ -19,7 +19,7 @@ dc2410c919727db6f52c9763cfcbcf00 *man/IYJtrans.Rd
 26bdc1f4b44b7d0307e3b60aa2ffb136 *man/LikI.cmprsk.Rd
 99d68aea0a3684c414bc736d935df6e0 *man/Longfun.Rd
 310ae818e16a8ec34cf56c4fa417fd98 *man/NonParTrans.Rd
-d0ab52772eb511e881099bfaf92da41b *man/ParamCop.Rd
+ee06a65ae22228ed50f7ab4b45ca7bfa *man/ParamCop.Rd
 7fe14fb87babdec491174ebae8805046 *man/ScoreEqn.Rd
 b2f04dbea14864e11c64216df7cc61e0 *man/SearchIndicate.Rd
 786b427b7a9104ad688e8c74a4fae592 *man/SolveH.Rd
@@ -45,7 +45,7 @@ e4998480f0dc7a3441710383baa6f123 *man/loglike.frank.unconstrained.Rd
 a057cdd9e99e2c9c4b14aa4775d1e9ac *man/loglike.gaussian.unconstrained.Rd
 487c605e65830f63407927ee55e06f70 *man/loglike.gumbel.unconstrained.Rd
 cbc2fec0cddc52ba884418fee738f513 *man/loglike.indep.unconstrained.Rd
-dce87e0d2b15eecd32e14cac8c08c352 *man/optimlikelihood.Rd
+4fd275b1f3dd707e840ac6c735e1ec10 *man/optimlikelihood.Rd
 29326a66312d3131a882c70aeabf8c95 *man/power_transform.Rd
 2702cc7c9d55596b1d1cc3994cb1ee4c *man/uniformize.data.Rd
 b08c6e33f38886ec7344e7e177a65258 *man/variance.cmprsk.Rd
