@@ -11,11 +11,8 @@
 #' @param cumL The estimated cumulative hazard function from the output of \code{\link{SolveL}}.
 #' @importFrom copula pCopula frankCopula gumbelCopula tau
 #' @import pbivnorm
-
 #' @return maximized log-likelihood value
-#'
-
-
+#' @noRd
 PseudoL = function(theta,resData,X,W,lhat,cumL,cop,dist){
   Z = resData$Z
   d1 = resData$d1
@@ -45,8 +42,7 @@ PseudoL = function(theta,resData,X,W,lhat,cumL,cop,dist){
   if (dist == "Weibull"){
     g2 = 1/nu*exp((y-W%*%eta)/nu)*exp(-exp((y-W%*%eta)/nu))           # log-time scale
     G2 = 1-exp(-exp((y-W%*%eta)/nu))
-  }
-  else if (dist == "lognormal"){   # Lognormal
+  }else if (dist == "lognormal"){   # Lognormal
     m = (y-W%*%eta)/nu
     g2 = 1/(sqrt(2*pi)*nu*Z)*exp(-(m^2/2))
     G2 = pnorm(m)
@@ -126,9 +122,7 @@ PseudoL = function(theta,resData,X,W,lhat,cumL,cop,dist){
 #'  @importFrom stats nlminb pnorm  qnorm sd
 #'
 #' @return Maximized log-likelihood value
-#'
-
-
+#' @noRd
 LikCopInd <- function(theta,resData,X,W,lhat,cumL,dist){ # gamma = 0
   Z = resData$Z
   d1 = resData$d1
@@ -138,8 +132,7 @@ LikCopInd <- function(theta,resData,X,W,lhat,cumL,dist){ # gamma = 0
     k = 1
     beta = theta[k]
     mu1 = X*beta
-  }
-  else if(!is.vector(X)){
+  }else if(!is.vector(X)){
     k = dim(X)[2]
     beta = theta[1:k]
     mu1 = X%*%beta
@@ -229,8 +222,6 @@ LikCopInd <- function(theta,resData,X,W,lhat,cumL,dist){ # gamma = 0
 #'}
 #'
 #' @export
-
-
 SolveL = function(theta,resData,X,W,
                   cop = c("Frank", "Gumbel",  "Normal"),
                   dist = c("Weibull", "lognormal")){
@@ -324,8 +315,6 @@ SolveL = function(theta,resData,X,W,
 #'
 #'
 #' @export
-
-
 SolveLI = function(theta,resData,X){
 
   #  Verify column names of input dataframe resData
@@ -365,8 +354,7 @@ SolveLI = function(theta,resData,X){
 #' @param ld Output of \code{\link{SolveL}} function at a fixed time t
 #' @importFrom copula pCopula frankCopula gumbelCopula tau
 #' @import pbivnorm
-
-
+#' @noRd
 CompC = function(theta,t,X,W,ld,cop,dist){
 
   if (is.vector(X)){
@@ -453,7 +441,8 @@ CompC = function(theta,t,X,W,ld,cop,dist){
 #' @param T1 Distinct observed survival time
 #' @param lhat Hazard function estimate
 #' @param Lhat Cumulative hazard function estimate
-
+#'
+#' @noRd
 Longfun = function(Z,T1,lhat,Lhat){
   n = length(Z)
   llong = rep(0,n)
@@ -472,7 +461,7 @@ Longfun = function(Z,T1,lhat,Lhat){
 #' @description This function computes distance between two vectors based on L2-norm
 #' @param a First vector
 #' @param b Second vector
-
+#' @noRd
 Distance = function(a,b){
   x = b-a
   n = length(x)
