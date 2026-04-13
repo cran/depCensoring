@@ -82,6 +82,10 @@ General hyperparameters:
  Default is FALSE. The feature \code{ignore.empty.IF = TRUE} is experimental,
  so there might exist edge cases for which the implementation will fail to
  run.}
+ \item{c:}{User-specified projection vector. If supplied, the method will
+ estimate the identified interval of \eqn{c^\top \beta} as opposed to the
+ identified interval of \eqn{\beta_k}, where \eqn{k} is specified as the
+ argument \code{idx.param.of.interest}.}
 }
 
 Hyperparameters specific to the EAM implementation:

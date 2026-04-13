@@ -1,7 +1,7 @@
 Package: depCensoring
 Type: Package
 Title: Statistical Methods for Survival Data with Dependent Censoring
-Version: 0.1.8
+Version: 0.1.10
 Authors@R: c(person("Ilias", "Willems", email = "ilias.willems@kuleuven.be", role = "aut", comment = c(ORCID = "0009-0001-9463-9942")),
     person("Gilles", "Crommen", email = "gilles.crommen@kuleuven.be", role = "aut", comment = c(ORCID = "0000-0001-8380-1900")),
     person("Negera Wakgari", "Deresa", email = "negera.deresa@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-1302-3725")),
@@ -27,11 +27,12 @@ Imports: survival, foreach, parallel, doParallel, pbivnorm, stats,
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.3.2
-Suggests: testthat (>= 3.0.0), rkriging, orthopolynom, OpenMx, stringr
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0), rkriging, orthopolynom, OpenMx, stringr,
+        LaplacesDemon
 Config/testthat/edition: 3
 NeedsCompilation: no
-Packaged: 2025-11-06 15:46:53 UTC; Negera Deresa
+Packaged: 2026-04-13 16:11:57 UTC; Negera Deresa
 Author: Ilias Willems [aut] (ORCID: <https://orcid.org/0009-0001-9463-9942>),
   Gilles Crommen [aut] (ORCID: <https://orcid.org/0000-0001-8380-1900>),
   Negera Wakgari Deresa [aut, cre] (ORCID:
@@ -43,4 +44,4 @@ Author: Ilias Willems [aut] (ORCID: <https://orcid.org/0009-0001-9463-9942>),
     <https://orcid.org/0000-0001-8827-7642>)
 Depends: R (>= 3.5.0)
 Repository: CRAN
-Date/Publication: 2025-11-06 17:20:08 UTC
+Date/Publication: 2026-04-13 18:10:08 UTC
